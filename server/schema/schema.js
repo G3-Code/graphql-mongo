@@ -21,7 +21,16 @@ const BookType = new GraphQLObjectType({
   fields: () => ({
     id: { type: GraphQLString },
     name: { type: GraphQLString },
-    genre: { type: GraphQLString }
+    genre: { type: GraphQLString },
+    author: {
+      type: AuthorType,
+      resolve(parent, args) {
+        let result = authors.filter(author => {
+          return author.id === parent.authorId;
+        });
+        return result[0];
+      }
+    }
   })
 });
 
@@ -45,8 +54,6 @@ const RootQuery = new GraphQLObjectType({
         let result = books.filter(book => {
           return book.id === args.id;
         });
-
-        console.log(result);
         return result[0];
       }
     },
