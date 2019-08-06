@@ -4,7 +4,8 @@
   "description": "This is a repo for a sample application with graphql and mongo db.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon index.js",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/G3-Code/graphql-mongo/issues"
   },
-  "homepage": "https://github.com/G3-Code/graphql-mongo#readme"
+  "homepage": "https://github.com/G3-Code/graphql-mongo#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
 }
