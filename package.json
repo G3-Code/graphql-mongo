@@ -1,0 +1,25 @@
+{
+  "name": "graphql-mongo",
+  "version": "1.0.0",
+  "description": "This is a repo for a sample application with graphql and mongo db.",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G3-Code/graphql-mongo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G3-Code/graphql-mongo/issues"
+  },
+  "homepage": "https://github.com/G3-Code/graphql-mongo#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}
