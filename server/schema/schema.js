@@ -5,9 +5,9 @@ const { GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLInt } = graphql;
 
 //dummy data
 var books = [
-  { name: "Name of the wind", genre: "Fantasy", id: "1" },
-  { name: "Airport", genre: "Fiction", id: "2" },
-  { name: "Wheels", genre: "Thriller", id: "3" }
+  { name: "Name of the wind", genre: "Fantasy", id: "1", authorId: "1" },
+  { name: "Airport", genre: "Fiction", id: "2", authorId: "2" },
+  { name: "Wheels", genre: "Thriller", id: "3", authorId: "3" }
 ];
 
 var authors = [
