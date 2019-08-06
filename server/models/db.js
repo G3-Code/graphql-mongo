@@ -15,3 +15,4 @@ mongoose.connect(
 );
 
 require("./book.model");
+require("./author.model");
